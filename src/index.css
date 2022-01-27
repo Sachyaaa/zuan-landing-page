@@ -246,17 +246,21 @@ body {
   margin: 7px 13px;
   font-size: 12px;
   text-align: center;
-  display: flex;
-  justify-self: unset;
-  align-items: center;
+  display: inline;
+
+}
+.span span{
+  position: relative;
+  bottom: 4px;
 }
 .cource-lower {
   flex: 200px;
   padding: 15px;
   width: 290px;
-  display: flex;
-  flex-direction:column;
-  align-items:flex-start;
+  /* display: flex; */
+  /* flex-direction:column; */
+  /* align-items:flex-start; */
+  /* justify-content: space-between; */
 }
 .cource-lower h3 {
   font-family: Roboto;
@@ -282,7 +286,7 @@ body {
   padding: 2px 6px;
 }
 .progress {
-  margin: 26px 0px;
+  margin: 24px 0px;
   width: 300px;
  
 }
@@ -322,7 +326,8 @@ body {
   letter-spacing: 0px;
   text-align: left;
   color: rgba(130, 130, 130, 1);
-  margin: 80px 0px 0px 0px;
+  
+  /* margin: 80px 0px 0px 0px; */
 }
 
 .rating img {
@@ -331,7 +336,7 @@ body {
 .bookmark{
   width: 50px;
   position: relative;
-  top: -157px;
+  top: -136px;
   left: 210px;
 }
 .progress-bar{
@@ -339,7 +344,7 @@ body {
   width: 250px;
   height: 6px;
   position: relative;
-  margin: 10px 0px;
+  /* margin: 10px 0px; */
   /* background: #555; */
   border-radius: 25px;
   background: rgba(242, 242, 242, 1);

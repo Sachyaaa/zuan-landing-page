@@ -14,19 +14,23 @@ export default function Cource(props) {
             <span className='span'>
             <img style={{display: props.bookmark}} className='bookmark' src={Bookmark} alt="" />
                 <img src={Date} alt="" />
-                <div >{props.date} | {props.from}-{props.to}</div>
+                <span >{props.date} | {props.from}-{props.to}</span>
             </span>
         </div>
         <div className="cource-lower">
+            <div>
             <h3>{props.name}</h3>
             <small>Oral Surgery</small>
-            {props.completed &&<div className="progress">
+            </div>
+            <div className="progress">
                 <span>Course Completion </span>
                 <div className="progress-bar">
-                    <span className="material"></span>
+                    <span className="material" style={{
+                        width: props.completed
+                    }}></span>
                 </div>
-            </div> }
-            <div className="rating">
+            </div> 
+            {props.rating &&<div className="rating">
                 <div>You Rated:</div>
                 <div>
                     <img src={Star} alt="" />
@@ -35,7 +39,7 @@ export default function Cource(props) {
                     <img src={Star} alt="" />
                     <img src={Star} alt="" />
                 </div>
-            </div>
+            </div>}
         </div>
         
     </div >;
