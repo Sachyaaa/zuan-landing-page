@@ -168,6 +168,11 @@ body {
   justify-items: stretch;
   overflow-x: scroll;
 }
+.scroll {
+  display: flex;
+  justify-items: stretch;
+  overflow-x: scroll;
+}
 
 .cources-top {
   width: auto;
@@ -229,6 +234,7 @@ body {
   justify-content: space-around;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
   margin-left: 24px;
+  margin-bottom: 40px;
 }
 .cource-upper {
   flex: 200px;
@@ -247,9 +253,8 @@ body {
   font-size: 12px;
   text-align: center;
   display: inline;
-
 }
-.span span{
+.span span {
   position: relative;
   bottom: 4px;
 }
@@ -288,7 +293,6 @@ body {
 .progress {
   margin: 24px 0px;
   width: 300px;
- 
 }
 .progress span {
   font-family: Roboto;
@@ -326,20 +330,20 @@ body {
   letter-spacing: 0px;
   text-align: left;
   color: rgba(130, 130, 130, 1);
-  
+
   /* margin: 80px 0px 0px 0px; */
 }
 
 .rating img {
   margin-right: 3px;
 }
-.bookmark{
+.bookmark {
   width: 50px;
   position: relative;
   top: -136px;
   left: 210px;
 }
-.progress-bar{
+.progress-bar {
   box-sizing: content-box;
   width: 250px;
   height: 6px;
@@ -348,12 +352,131 @@ body {
   /* background: #555; */
   border-radius: 25px;
   background: rgba(242, 242, 242, 1);
-
 }
-.material{
+.material {
   display: block;
   height: 100%;
   border-radius: 20px;
-  background-image: linear-gradient(134.62deg, #DC7666 -8.39%, #FF7E6D 70.13%);
+  background-image: linear-gradient(134.62deg, #dc7666 -8.39%, #ff7e6d 70.13%);
+}
 
+.categories {
+  background-color: #333333;
+  padding: 20px ;
+}
+.categories h2 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 300;
+  margin: 20px 0px;
+  margin-left: 100px;
+}
+.category {
+  margin: 20px 30px 30px 0px;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 190px;
+  width: 350px;
+  border-radius: 10px;
+  font-family: Roboto;
+}
+.category:first-child{
+  margin-left: 100px;
+}
+.category-text {
+  flex: 1.4;
+}
+.category-text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  /* margin-bottom: 10px; */
+}
+.category-text small {
+  font-size: 10px;
+  font-weight: 400;
+  /* margin-bottom: 30px; */
+  color: rgba(130, 130, 130, 1);
+}
+.category-img {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  margin-left: 40px;
+}
+.category-text .btn {
+  
+  position: relative;
+
+  top: 0;
+  left: 0;
+  margin-top: 14px;
+  background: transparent ;
+ 
+  border: 1.4px solid rgba(220, 118, 102, 1);
+ 
+}
+
+.btn span {
+  /* font-weight: 500 !important; */
+  font: bold 120px Poppins, sans-serif;
+  background-image: linear-gradient(134.62deg, #dc7666 -8.39%, #ff7e6d 70.13%);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  background-clip: text;
+  color: transparent;
+}
+.category-text .btn:hover {
+  background: linear-gradient(93.38deg, #ec6d59 32.83%, #e5b060 111.9%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+.category-text .btn:hover span{
+  color: #fff;
+}
+.new{
+  position: relative;
+  top: -32px;
+  left: 180px;
+  font-size: 11px;
+}
+.new span{
+  padding: 2px 5px;
+  background: linear-gradient(134.62deg, #DC7666 -8.39%, #FF7E6D 70.13%);
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.membership{
+  /* margin-bottom: 50px; */
+  display: flex;
+  padding: 40px 80px;
+  background: linear-gradient(132.47deg, #DC7666 49.73%, #FBDE53 181.82%);
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  flex: 2;
+}
+.membership-right{
+  flex: 3;
+  border-left: 2px solid rgba(51, 51, 51, 1);
+  padding: 0px 40px;
+}
+.offer h2{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+.a{
+  font-size: 34px;
+  font-weight: 700;
+}
+.b{
+  font-size: 27px;
+  font-weight: 700;
 }

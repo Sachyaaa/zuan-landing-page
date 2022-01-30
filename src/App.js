@@ -1,5 +1,7 @@
+import Categories from "./Categories";
 import Cources from "./Cources";
 import Home from "./Home";
+import Membership from "./Membership";
 import Navbar from "./Navbar";
 import Services from "./Services";
 
@@ -11,6 +13,8 @@ function App() {
       <Home />
       <Services />
       <Cources />
+      <Categories />
+      <Membership />
     </div>
   );
 }
