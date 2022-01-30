@@ -1,16 +1,16 @@
 import React from 'react';
 
-export default function RightBtns() {
+export default function RightBtns(props) {
     return <div className='right-btns'>
         <div className="line">
-            <span>Catagery name 1</span>
+            <span>{props.btnName} 1</span>
             <btn className="btn-white">
-                <span>Cheak Status 1</span>
+                <span>{props.btn}</span>
             </btn>
         </div>
         <div className="line">
-            <span>Catagery name 2</span>
-            <btn className="btn-white"><span>Cheak Status 3</span></btn>
+            <span>{props.btnName} 2</span>
+            <btn className="btn-white"><span>{props.btn}</span></btn>
         </div>
     </div>;
 }
